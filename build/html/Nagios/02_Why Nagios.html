@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Why Nagios? [Why] &mdash; LMSopened v 0.01 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LMSopened v 0.01 documentation" href="../index.html"/>
+        <link rel="up" title="Nagios Chapter" href="index.html"/>
+        <link rel="next" title="Tools Chapter" href="../Tools/index.html"/>
+        <link rel="prev" title="1. What is Nagios? [Nagios]" href="01_What is Nagios.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LMSopened
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Releases/index.html">Releases Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Design/index.html">About Research Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OS/index.html">OS chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cacti/index.html">Cacti Chapter</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Nagios Chapter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_What is Nagios.html">1. What is Nagios? <code class="docutils literal notranslate"><span class="pre">[Nagios]</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Why Nagios? <code class="docutils literal notranslate"><span class="pre">[Why]</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/index.html">Tools Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Activities/index.html">Activities Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/index.html">Documents Chapter</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LMSopened</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Nagios Chapter</a> &raquo;</li>
+        
+      <li>2. Why Nagios? <code class="docutils literal notranslate"><span class="pre">[Why]</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Nagios/02_Why Nagios.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="why-nagios-why">
+<h1>2. Why Nagios? <a class="reference internal" href="#why" id="id1">[Why]</a><a class="headerlink" href="#why-nagios-why" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">zjz</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">2018-03</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="why" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Why]</a></td><td><a class="reference external" href="https://www.nagios.org/about/">https://www.nagios.org/about/</a></td></tr>
+</tbody>
+</table>
+<img alt="../_images/nagios_banner.png" src="../_images/nagios_banner.png" />
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>综合监测</dt>
+<dd><ul class="first last">
+<li>使用单一工具监控应用程序，服务，操作系统，网络协议，系统指标和基础架构组件的功能</li>
+<li>功能强大的脚本API可以轻松监控室内和自定义应用程序，服务和系统</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>可见性和意识</dt>
+<dd><ul class="first last">
+<li>整个监控的IT基础设施的集中视图</li>
+<li>通过网页界面提供详细的状态信息</li>
+<li>快速检测基础设施停机</li>
+<li>警报可通过电子邮件或短信传送给技术人员</li>
+<li>升级功能可确保警报通知能够传递给合适的人员</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>问题修复</dt>
+<dd><ul class="first last">
+<li>警报确认提供有关已知问题和问题响应的信息</li>
+<li>事件处理程序允许自动重启失败的应用程序和服务</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>主动规划</dt>
+<dd><ul class="first last">
+<li>趋势和容量规划插件可确保您了解老化的基础架构</li>
+<li>预定的停机时间允许在基础设施升级期间警报抑制</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>报告</dt>
+<dd><ul class="first last">
+<li>可用性报告确保满足SLA</li>
+<li>历史报告提供了警报，通知，停机和警报响应的记录</li>
+<li>第三方插件扩展了报告功能</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>多租户功能</dt>
+<dd><ul class="first last">
+<li>多用户访问Web界面允许利益相关方查看基础设施状态</li>
+<li>用户特定的视图可确保客户端仅查看其基础架构组件</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>可扩展的架构</dt>
+<dd><ul class="first last">
+<li>使用多种API可轻松与内部和第三方应用程序集成</li>
+<li>数百个社区开发的插件扩展了核心Nagios功能</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>稳定，可靠，受尊重的平台</dt>
+<dd><ul class="first last">
+<li>超过10年的积极发展</li>
+<li>可以扩展以监视数千个节点</li>
+<li>故障转移功能可确保对关键IT基础架构组件进行不间断监视</li>
+<li>多个奖项，媒体报道和认可证明了Nagios的价值</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>充满活力的社区</dt>
+<dd><ul class="first last">
+<li>全球超过100万以上的用户</li>
+<li>活跃的社区邮件列表提供免费支持</li>
+<li>数百个社区开发的插件扩展了Nagios的核心功能</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>可自定义的代码</dt>
+<dd><ul class="first last">
+<li>开源软件</li>
+<li>完全访问源代码</li>
+<li>根据GPL许可证发布</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Tools/index.html" class="btn btn-neutral float-right" title="Tools Chapter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01_What is Nagios.html" class="btn btn-neutral" title="1. What is Nagios? [Nagios]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, zjz.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v 0.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

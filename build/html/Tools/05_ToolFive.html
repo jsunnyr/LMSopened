@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. PHP [PHP] &mdash; LMSopened v 0.01 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LMSopened v 0.01 documentation" href="../index.html"/>
+        <link rel="up" title="Tools Chapter" href="index.html"/>
+        <link rel="next" title="6. ToolSix" href="06_ToolSix.html"/>
+        <link rel="prev" title="4. MySQL [MySQL]" href="04_ToolFour.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LMSopened
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Releases/index.html">Releases Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Design/index.html">About Research Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OS/index.html">OS chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cacti/index.html">Cacti Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nagios/index.html">Nagios Chapter</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tools Chapter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_ToolOne.html">1. Linux <code class="docutils literal notranslate"><span class="pre">[Linux]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_ToolTwo.html">2. Nginx <code class="docutils literal notranslate"><span class="pre">[Nginx]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_ToolThree.html">3. Apache httpd <code class="docutils literal notranslate"><span class="pre">[Apache_httpd]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_ToolFour.html">4. MySQL <code class="docutils literal notranslate"><span class="pre">[MySQL]</span></code>  </a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. PHP <code class="docutils literal notranslate"><span class="pre">[PHP]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_ToolSix.html">6. ToolSix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_ToolSeven.html">7. ToolSeven</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Activities/index.html">Activities Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/index.html">Documents Chapter</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LMSopened</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Tools Chapter</a> &raquo;</li>
+        
+      <li>5. PHP <code class="docutils literal notranslate"><span class="pre">[PHP]</span></code>  </li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Tools/05_ToolFive.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="php-php-1-2">
+<h1>5. PHP <a class="reference internal" href="#php" id="id1">[PHP]</a> <a class="footnote-reference" href="#id4" id="id2">[1]</a> <a class="footnote-reference" href="#id5" id="id3">[2]</a><a class="headerlink" href="#php-php-1-2" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/php_logo.png" src="../_images/php_logo.png" />
+<p>powered by</p>
+<img alt="../_images/Elephpant.svg.png" src="../_images/Elephpant.svg.png" />
+<table class="docutils citation" frame="void" id="php" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[PHP]</a></td><td><a class="reference external" href="http://php.net/">http://php.net/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><a class="reference external" href="https://php.net/">https://php.net/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td><a class="reference external" href="https://en.wikipedia.org/wiki/PHP">https://en.wikipedia.org/wiki/PHP</a></td></tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Official Announcement</p>
+</div>
+<p>PHP 是 PHP: Hypertext Preprocessor的首字母缩写。很多人有些糊涂了，因为缩写中的第一个字母也来自缩写。这种方法叫做递归缩写（recursive acronyms）.
+PHP 是一种 HTML 嵌入式的脚本语言。它的很多语法来自 C，Java 和 Perl，并具有几个 PHP 独有的特点。该语言的主要目标是让 Web 开发人员快速地书写动态生成的网页。</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">wikipedia</p>
+</div>
+<p>PHP是一种为Web开发设计的服务器端脚本语言，也可用作通用编程语言。最初由Rasmus Lerdorf于1994年创建，PHP 参考实现现由The PHP Group制作。PHP最初代表Personal Home Page，但它现在代表了递归缩写词PHP：Hypertext Preprocessor</p>
+<p>PHP代码可以嵌入到HTML代码中，也可以与各种Web模板系统，Web内容管理系统和Web框架结合使用。PHP代码通常由在Web服务器中作为模块实现的PHP 解释器或通用网关接口（CGI）可执行文件处理。Web服务器将解释和执行的PHP代码的结果组合在一起，该代码可以是任何类型的数据，包括图像，以及生成的网页。PHP代码也可以使用命令行界面（CLI）执行，并可用于实现独立的图形应用程序.</p>
+<p>由Zend引擎驱动的标准PHP解释器是根据PHP许可证发布的免费软件。PHP已经被广泛移植，可以在几乎每一个部署在大多数Web服务器的操作系统和平台，免费的。</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="06_ToolSix.html" class="btn btn-neutral float-right" title="6. ToolSix" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="04_ToolFour.html" class="btn btn-neutral" title="4. MySQL [MySQL]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, zjz.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v 0.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. Nginx [Nginx] &mdash; LMSopened v 0.01 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LMSopened v 0.01 documentation" href="../index.html"/>
+        <link rel="up" title="Tools Chapter" href="index.html"/>
+        <link rel="next" title="3. Apache httpd [Apache_httpd]" href="03_ToolThree.html"/>
+        <link rel="prev" title="1. Linux [Linux]" href="01_ToolOne.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LMSopened
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Releases/index.html">Releases Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Design/index.html">About Research Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OS/index.html">OS chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cacti/index.html">Cacti Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nagios/index.html">Nagios Chapter</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tools Chapter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_ToolOne.html">1. Linux <code class="docutils literal notranslate"><span class="pre">[Linux]</span></code>  </a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. Nginx <code class="docutils literal notranslate"><span class="pre">[Nginx]</span></code>  </a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction-to-nginx">2.1. introduction to Nginx.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_ToolThree.html">3. Apache httpd <code class="docutils literal notranslate"><span class="pre">[Apache_httpd]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_ToolFour.html">4. MySQL <code class="docutils literal notranslate"><span class="pre">[MySQL]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_ToolFive.html">5. PHP <code class="docutils literal notranslate"><span class="pre">[PHP]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_ToolSix.html">6. ToolSix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_ToolSeven.html">7. ToolSeven</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Activities/index.html">Activities Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/index.html">Documents Chapter</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LMSopened</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Tools Chapter</a> &raquo;</li>
+        
+      <li>2. Nginx <code class="docutils literal notranslate"><span class="pre">[Nginx]</span></code>  </li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Tools/02_ToolTwo.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nginx-nginx-1-2">
+<h1>2. Nginx <a class="reference internal" href="#nginx" id="id1">[Nginx]</a> <a class="footnote-reference" href="#id4" id="id2">[1]</a> <a class="footnote-reference" href="#id5" id="id3">[2]</a><a class="headerlink" href="#nginx-nginx-1-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction-to-nginx">
+<h2>2.1. introduction to Nginx.<a class="headerlink" href="#introduction-to-nginx" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/nginx.png" src="../_images/nginx.png" />
+<table class="docutils citation" frame="void" id="nginx" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Nginx]</a></td><td><a class="reference external" href="https://nginx.org/">https://nginx.org/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><a class="reference external" href="https://nginx.org/">https://nginx.org/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td><a class="reference external" href="https://en.wikipedia.org/wiki/Nginx">https://en.wikipedia.org/wiki/Nginx</a></td></tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Official Announcement.</p>
+</div>
+<p>nginx [engine x]是最初由Igor Sysoev编写的HTTP和反向代理服务器，邮件代理服务器和通用TCP / UDP代理服务器。很长一段时间以来，它一直在许多重负荷的俄罗斯网站上运行，包括 Yandex， Mail.Ru， VK和 Rambler。根据Netcraft，2018年2月，nginx服务或代理了 25.92％最繁忙的站点.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>基本的HTTP服务器功能</dt>
+<dd><ul class="first last">
+<li>提供静态和 索引 文件， 自动索引 ; 打开文件描述符缓存 ;</li>
+<li>通过缓存加速反向代理 ; 负载平衡和容错 ;</li>
+<li>通过缓存FastCGI， uwsgi， SCGI和 memcached 服务器加速支持 ; 负载平衡和容错 ;</li>
+<li>模块化架构。过滤器包括 gzipping，字节范围，分块响应， XSLT， SSI和图像转换过滤器。如果通过代理或FastCGI / uwsgi / SCGI服务器处理单个页面内的多个SSI包含，可以并行处理;</li>
+<li>SSL和TLS SNI支持 ;</li>
+<li>支持 具有加权和依赖性优先级的HTTP / 2。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>其他HTTP服务器功能</dt>
+<dd><ul class="first last">
+<li>基于名称和基于IP的 虚拟服务器 ;</li>
+<li>保持活跃 和流水线连接支持;</li>
+<li>访问日志格式， 缓冲日志写入， 快速日志轮换和 系统日志日志记录 ;</li>
+<li>3xx-5xx错误代码 重定向 ;</li>
+<li>重写模块： 使用正则表达式更改URI ;</li>
+<li>根据 客户端地址执行不同的功能 ;</li>
+<li>基于客户端IP地址， 密码（HTTP基本认证）和 子请求结果的访问控制 ;</li>
+<li>HTTP referer的 验证 ;</li>
+<li>该PUT，DELETE，MKCOL，复制和移动方法;</li>
+<li>FLV 和 MP4 流媒体;</li>
+<li>响应速率限制 ;</li>
+<li>限制 来自一个地址的同时连接 或 请求的数量 ;</li>
+<li>基于IP的地理位置 ;</li>
+<li>A / B测试 ;</li>
+<li>请求镜像 ;</li>
+<li>嵌入式Perl ;</li>
+<li>nginScript。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>邮件代理服务器功能</dt>
+<dd><ul class="first last">
+<li>用户 使用外部HTTP 认证 服务器重定向到 IMAP 或 POP3服务器;</li>
+<li>使用外部HTTP 认证 服务器的用户认证 和连接重定向到内部 SMTP服务器;</li>
+<li><dl class="first docutils">
+<dt>认证方法：</dt>
+<dd><ul class="first last">
+<li>POP3：USER / PASS，APOP，AUTH LOGIN / PLAIN / CRAM-MD5;</li>
+<li>IMAP：LOGIN，AUTH LOGIN / PLAIN / CRAM-MD5;</li>
+<li>SMTP：AUTH LOGIN / PLAIN / CRAM-MD5;</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>SSL支持;</li>
+<li>STARTTLS和STLS支持。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>TCP / UDP代理服务器功能</dt>
+<dd><ul class="first last">
+<li>TCP和UDP的通用代理 ;</li>
+<li>SSL和TLS SNI支持TCP;</li>
+<li>负载平衡和容错 ;</li>
+<li>基于客户端地址的访问控制 ;</li>
+<li>根据客户端地址执行不同的功能 ;</li>
+<li>限制 来自一个地址的同时连接的数量 ;</li>
+<li>访问日志格式， 缓冲日志写入， 快速日志轮换和 系统日志日志记录 ;</li>
+<li>基于IP的地理位置 ;</li>
+<li>A / B测试 ;</li>
+<li>nginScript。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>体系结构和可扩展性</dt>
+<dd><ul class="first last">
+<li>一个主人和几个工人进程; 工作进程在非特权用户下运行;</li>
+<li>灵活的配置 ;</li>
+<li>在不中断客户服务的情况下重新配置 和升级可执行文件 ;</li>
+<li>支持 kqueue（FreeBSD 4.1+），epoll（Linux 2.6+），/ dev / poll（Solaris 7 11/99 +），事件端口（Solaris 10），select和poll;</li>
+<li>包括EV_CLEAR，EV_DISABLE（暂时禁用事件），NOTE_LOWAT，EV_EOF，可用数据数量，错误代码等各种kqueue功能的支持;</li>
+<li>支持各种epoll功能，包括EPOLLRDHUP（Linux 2.6.17+，glibc 2.8+）和EPOLLEXCLUSIVE（Linux 4.5+，glibc 2.24+）;</li>
+<li>sendfile（FreeBSD 3.1+，Linux 2.2+，macOS 10.5+），sendfile64（Linux 2.4.21+）和sendfilev（Solaris 8 7/01 +）支持;</li>
+<li>文件AIO （FreeBSD 4.3+，Linux 2.6.22+）;</li>
+<li>DIRECTIO （FreeBSD 4.4+，Linux 2.4+，Solaris 2.6+，macOS）;</li>
+<li>接受过滤器（FreeBSD 4.1+，NetBSD 5.0+）和TCP_DEFER_ACCEPT（Linux 2.4+） 支持 ;</li>
+<li>10,000个不活动的HTTP保持连接需要大约2.5M内存;</li>
+<li>数据复制操作保持在最低限度。</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>经测试的操作系统和平台</dt>
+<dd><ul class="first last">
+<li>FreeBSD 3 - 11 / i386; FreeBSD 5 - 11 / amd64;</li>
+<li>Linux 2.2 - 4 / i386; Linux 2.6 - 4 / amd64; Linux 3 - 4 /armv6l，armv7l，aarch64，ppc64le;</li>
+<li>Solaris 9 / i386，sun4u; Solaris 10 / i386，amd64，sun4v;</li>
+<li>AIX 7.1 / powerpc;</li>
+<li>HP-UX 11.31 / ia64;</li>
+<li>macOS / ppc，i386;</li>
+<li>Windows XP，Windows Server 2003。</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Wikipedia</p>
+</div>
+<p>Nginx的（/ ˌ ɛ Ñ dʒ ɪ Ñ ɛ ķ 小号 / EN -jin- EKS）（程式化为NGINX，NGiИX或nginx的）是一种网络服务器，其也可以被用作反向代理，负载平衡器和HTTP缓存。该软件由Igor Sysoev创建，并于2004年首次公开发布。[8]同名公司于2011年成立，以提供支持。[9]</p>
+<p>Nginx是免费的开放源代码软件，根据类BSD许可条款发布。很大一部分Web服务器使用NGINX，[10]经常作为负载均衡器。[11]</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="03_ToolThree.html" class="btn btn-neutral float-right" title="3. Apache httpd [Apache_httpd]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01_ToolOne.html" class="btn btn-neutral" title="1. Linux [Linux]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, zjz.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v 0.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

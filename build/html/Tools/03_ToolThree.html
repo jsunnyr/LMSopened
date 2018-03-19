@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Apache httpd [Apache_httpd] &mdash; LMSopened v 0.01 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="LMSopened v 0.01 documentation" href="../index.html"/>
+        <link rel="up" title="Tools Chapter" href="index.html"/>
+        <link rel="next" title="4. MySQL [MySQL]" href="04_ToolFour.html"/>
+        <link rel="prev" title="2. Nginx [Nginx]" href="02_ToolTwo.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LMSopened
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Releases/index.html">Releases Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Design/index.html">About Research Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OS/index.html">OS chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cacti/index.html">Cacti Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nagios/index.html">Nagios Chapter</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tools Chapter</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_ToolOne.html">1. Linux <code class="docutils literal notranslate"><span class="pre">[Linux]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_ToolTwo.html">2. Nginx <code class="docutils literal notranslate"><span class="pre">[Nginx]</span></code>  </a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Apache httpd <code class="docutils literal notranslate"><span class="pre">[Apache_httpd]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_ToolFour.html">4. MySQL <code class="docutils literal notranslate"><span class="pre">[MySQL]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_ToolFive.html">5. PHP <code class="docutils literal notranslate"><span class="pre">[PHP]</span></code>  </a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_ToolSix.html">6. ToolSix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_ToolSeven.html">7. ToolSeven</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Activities/index.html">Activities Chapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Documents/index.html">Documents Chapter</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LMSopened</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Tools Chapter</a> &raquo;</li>
+        
+      <li>3. Apache httpd <code class="docutils literal notranslate"><span class="pre">[Apache_httpd]</span></code>  </li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Tools/03_ToolThree.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="apache-httpd-apache-httpd-1-2">
+<h1>3. Apache httpd <a class="reference internal" href="#apache-httpd" id="id1">[Apache_httpd]</a> <a class="footnote-reference" href="#id4" id="id2">[1]</a> <a class="footnote-reference" href="#id5" id="id3">[2]</a><a class="headerlink" href="#apache-httpd-apache-httpd-1-2" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/httpd_logo_wide_new.png" src="../_images/httpd_logo_wide_new.png" />
+<table class="docutils citation" frame="void" id="apache-httpd" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Apache_httpd]</a></td><td><a class="reference external" href="http://httpd.apache.org/">http://httpd.apache.org/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><a class="reference external" href="http://httpd.apache.org/">http://httpd.apache.org/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td><a class="reference external" href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">https://en.wikipedia.org/wiki/Apache_HTTP_Server</a></td></tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Official Announcement</p>
+</div>
+<p>Apache HTTP Server Project是一项协作式软件开发工作，旨在创建一个HTTP（Web）服务器的强大的商业级，功能丰富且免费的源代码实现。该项目由世界各地的一组志愿者共同管理，利用互联网和网络来交流，计划和开发服务器及其相关文档。该项目是Apache软件基金会的一部分</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">wikipedia</p>
+</div>
+<p>Apache HTTP服务器，俗称的Apache，是一种自由和开源 跨平台的 网络服务器，下的条款释放Apache许可证 2.0。Apache由Apache软件基金会主持下的开放开发社区开发和维护。</p>
+<p>Apache HTTP Server是跨平台的; 从2017年6月1日起，92％的Apache HTTPS Server副本在Linux发行版上运行。2.0版改进了对非Unix操作系统（如Windows和OS / 2）的支持。旧版本的Apache被移植到OpenVMS和NetWare上运行。</p>
+<p>最初基于NCSA HTTPd服务器，在NCSA代码工作停滞之后，Apache开始于1995年初。Apache在万维网的初始发展中扮演着重要角色，[8]迅速超越了NCSA HTTPd作为主要的HTTP服务器，并且自1996年4月以来一直保持最受欢迎。2009年，它成为第一个服务更多超过1亿个网站。截至2016年7月，估计所有活动网站中的46％和百万网站中的43％都有服务。</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="04_ToolFour.html" class="btn btn-neutral float-right" title="4. MySQL [MySQL]" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="02_ToolTwo.html" class="btn btn-neutral" title="2. Nginx [Nginx]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, zjz.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v 0.01',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
