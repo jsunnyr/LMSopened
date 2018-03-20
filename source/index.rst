@@ -28,6 +28,7 @@ Root Directory:
    Tools/index
    Activities/index
    Documents/index
+   Files/index
 
 Indices and tables
 ==================

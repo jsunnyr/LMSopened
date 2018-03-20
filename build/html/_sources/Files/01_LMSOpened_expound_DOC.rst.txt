@@ -1,0 +1,11 @@
+============================================
+Propose a thesis and expound its feasibility
+============================================
+
+.. file:: ../files/LMSOpened_Expound_DOC.doc
+.. note:: This file is LMSOpened_Expound_DOC.doc
+
+此文件为:
+	Project LMSOpened Openning Document
+		to propose a thesis and expound its feasibility
+			--zjz
